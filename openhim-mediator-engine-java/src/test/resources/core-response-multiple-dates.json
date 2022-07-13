@@ -1,0 +1,47 @@
+{
+    "x-mediator-urn": "urn:mediator:test-mediator",
+    "status": "Successful",
+    "response": {
+        "status": 200,
+        "headers": { "Content-Type": "text/plain" },
+        "body": "a test response",
+        "timestamp": "2015-01-15T12:51:55.000+00:00"
+    },
+    "orchestrations": [
+        {
+            "name": "orch1",
+            "request": {
+                "host": "someserver",
+                "port": "8080",
+                "path": "/orch1",
+                "body": "orchestration 1",
+                "method": "POST",
+                "timestamp": "2015-01-15T14:51:55.000+02:00"
+            },
+            "response": {
+                "status": 201,
+                "headers": { "Content-Type": "text/plain" },
+                "body": "created",
+                "timestamp": 1421326260000
+            }
+        },
+        {
+            "name": "orch2",
+            "request": {
+                "path": "/orch2",
+                "method": "GET",
+                "timestamp": "2015-01-15T12:51:55.000+00:00"
+            },
+            "response": {
+                "status": 200,
+                "headers": { "Content-Type": "text/xml" },
+                "body": "<data>test orchestration 2</data>",
+                "timestamp": "2015-01-15T14:51:55.000+02:00"
+            }
+        }
+    ],
+    "properties": {
+        "pro1": "val1",
+        "pro2": "val2"
+    }
+}
