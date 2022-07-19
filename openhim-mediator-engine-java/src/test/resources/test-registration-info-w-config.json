@@ -7,7 +7,7 @@
     {
       "name": "Mediator",
       "host": "localhost",
-      "port": "8800",
+      "port": "9000",
       "type": "http"
     }
   ],

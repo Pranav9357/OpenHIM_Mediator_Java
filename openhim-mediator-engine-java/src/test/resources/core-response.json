@@ -12,7 +12,7 @@
             "name": "orch1",
             "request": {
                 "host": "someserver",
-                "port": "8080",
+                "port": "9000",
                 "path": "/orch1",
                 "body": "orchestration 1",
                 "method": "POST",
